@@ -1,8 +1,8 @@
 export class TabController {
     constructor(title) {
-        const styleLinker = document.createElement('link');
-        styleLinker.rel = "stylesheet";
-        styleLinker.href = "./tabStyle.css";
+        this.styleLinker = document.createElement('link');
+        this.styleLinker.rel = "stylesheet";
+        this.styleLinker.href = "./tabStyle.css";
 
         
         this.elements = [];
@@ -20,7 +20,7 @@ export class TabController {
 
         document.body.appendChild(this.container);
 
-        document.head.appendChild(styleLinker);
+        document.head.appendChild(this.styleLinker);
     }
 
     newTab({title, content}) {
@@ -53,6 +53,9 @@ export class TabController {
         });
     }
 
+    changeStyleSource(url) {
+        this.styleLinker.href = `./${url}`;
+    }
 }
 
 export class Tab {
