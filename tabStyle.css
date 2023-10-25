@@ -46,9 +46,8 @@ body {
     user-select: none;
     height: 2.5rem;
     padding: 0.2rem 1.5rem;
-    border-radius: 0.7rem ;
+    border-radius: 0.5rem ;
     text-overflow: clip;
-    
     transition: all 0.3s ease;
 }
 

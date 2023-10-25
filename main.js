@@ -24,12 +24,12 @@ controller.newTab({
     content: createTemplate("P3")
 });
 
-controller.newTab({
-    title: "Tab 4",
-    content: createTemplate("P4")
-});
+// controller.newTab({
+//     title: "Tab 4",
+//     content: createTemplate("P4")
+// });
 
-controller.newTab({
-    title: "Tab 5",
-    content: createTemplate("P5")
-});
+// controller.newTab({
+//     title: "Tab 5",
+//     content: createTemplate("P5")
+// });
