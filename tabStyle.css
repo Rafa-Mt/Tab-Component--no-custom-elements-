@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+#tab_controller {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#tab_controller > * {
+    font-family: 'Montserrat';
+}
+
+#tab_list, #controller_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;    
+}
+
+#active_content {
+    padding: 2rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.selector {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    height: 2.5rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.7rem ;
+    transition: all 0.3s ease;
+}
+
+.selector:hover {
+    background-color: #f2f2f2;
+    /* transform: scale(1.05); */
+}
+
+.active_selector {
+    background-color: #d2d2d2;
+}
+
+.tab {
+    display: none;
+}
+
+.active_tab {
+    display: grid;
+}
